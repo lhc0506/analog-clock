@@ -13,7 +13,7 @@ const Clock = ({radius, ...props}: ClockProps) => {
   const {second, minute, hour, updateTime} = useBoundStore();
   const secondAngle = (second / 60) * 360;
   const minuteAngle = (minute / 60) * 360;
-  const hourAngle = (hour / 12) * 360;
+  const hourAngle = (hour / 12) * 360 + (minute * 30) / 60;
 
   const clockRef = React.useRef<HTMLDivElement>(null);
 
