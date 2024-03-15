@@ -1,0 +1,11 @@
+.hour {
+  transform: rotate(var(--hour-angle));
+}
+
+.minute {
+  transform: rotate(var(--minute-angle));
+}
+
+.second {
+  transform: rotate(var(--second-angle));
+}
